@@ -3,20 +3,15 @@
 
 /* GENERAL STYLES */
 
-body {
-  font-family: 'TT Lakes Medium', sans-serif;
-  margin: 0 auto;
-  padding: 0;
-}
 
 /* BLOCKS */
 
 .wrapper {
   height: 100vh;
   width: 100vw;
-  background-color: #F2F2F2;
   margin: 0 auto;
   padding: 0;
+  background-color: $main-background;
 }
 
 .header {
@@ -25,30 +20,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem;
-}
-
-.main {
-  display: flex;
-  overflow: scroll;
-  flex-wrap: wrap;
-  height: 90vh;
-  align-content: flex-start;
-}
-
-.tab {
-  flex-shrink: 0;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin: 1rem 1rem 2rem 1rem;
-  overflow-x:auto;
-
-}
-
-.tab-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 1rem;
 }
 
 /* ELEMENTS */
@@ -81,45 +52,6 @@ body {
   height: 65%;
 }
 
-.tab__button {
-  border-style: none;
-  font-size: 1rem;
-  font-family: 'TT Lakes Medium', sans-serif;
-  padding: 0.5rem;
-}
-
-.tab__button:hover {
-  border-style: solid;
-  border-color: #B8FFEC;
-  background-color: white;
-}
-
-.main__signboard {
-  height: 100%;
-  width: 100%;
-  min-width: 320px;
-  min-height: 176px;
-  max-width: 530px;
-  max-height: 307px;
-}
-
-.tab-content__text {
-  word-wrap: normal;
-  width: 50%;
-}
-
-.wrapper__h1 {
-  border-left: solid #41F6D7;
-  padding-left: 1rem;
-}
-
-.tab-content__text-next {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-right: 2rem;
-}
-
 /* MODIFIERS */
 
 .header--color {
@@ -136,20 +68,4 @@ body {
 
 .header__items--margin {
   margin: 1rem;
-}
-
-.tab-content__text--font-size {
-  font-size: 16px;
-}
-
-.tab-content__text--bold {
-  font-weight: bold;
-}
-
-
-@media (max-width: 1060px) {
-  .tab-content__text {
-    width: 100%;
-  }
-
 }
