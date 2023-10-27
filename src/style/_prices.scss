@@ -1,0 +1,62 @@
+/* BLOCKS */
+.prices {
+  margin-bottom: 2rem;
+}
+
+.prices__table {
+  width: 95%;
+  margin: 2rem;
+  border-collapse: collapse;
+}
+
+/* ELEMENTS */
+
+.prices__table__td, .prices__table__th {
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.prices__table tr {
+  border-bottom: 0.03rem solid $button-text-grey;
+}
+
+.prices__table tr:first-child, .prices__table tr:last-child {
+  border-bottom: none;
+}
+
+.prices__table__td {
+  background-color: $button-background;
+}
+
+.prices__table__th {
+  font-size: 1rem;
+  color: $button-text-grey;
+  padding-bottom: 1rem;
+}
+
+.prices__table__td__button {
+  background-image: url("../img/button_oval.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 10%;
+    padding-right: 1rem;
+  }
+
+  p {
+    font-weight: bold;
+    color: $button-background;
+    font-size: 0.9rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+/* MODIFIERS */

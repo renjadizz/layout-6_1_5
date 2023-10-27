@@ -8,7 +8,6 @@
 
 .brands {
   width: 100vw;
-  background-color: #F8F8F8;
 }
 
 .brands__header {
@@ -28,7 +27,7 @@
 
 .brands__header__text {
   font-size: 1.3rem;
-  color: #7E7E82;
+  color: $button-text-grey;
   margin-left: 1rem;
 }
 
@@ -37,8 +36,8 @@
   min-height: 72px;
   margin: 1rem;
   border-style: solid;
-  border-color: #EAEAEA;
-  background-color: #FFFFFF;
+  border-color: $button-border-grey;
+  background-color: $button-background;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
