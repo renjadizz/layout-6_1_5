@@ -1,0 +1,37 @@
+/* BLOCKS */
+
+.devices__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr min-content;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+/* ELEMENTS */
+
+.devices__tab__button {
+  min-height: 160px;
+  position: relative;
+}
+
+.devices__grid__text {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 1.2rem;
+  font-family: "TT Lakes Medium";
+  color: $button-text-black;
+  font-weight: 600;
+}
+
+.devices__tab__button__icon-go {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 1rem;
+}
+
+.devices__tab__button--hidable {
+  display: none;
+}
