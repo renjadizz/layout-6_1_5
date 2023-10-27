@@ -1,0 +1,25 @@
+.offer {
+  padding: 0 2rem;
+}
+
+.offer__button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+
+  img {
+    filter: invert(37%) sepia(77%) saturate(7004%) hue-rotate(322deg) brightness(108%) contrast(101%);
+    padding-right: 1rem;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.offer__button:hover {
+  filter: grayscale(100%);
+}
