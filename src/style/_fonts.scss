@@ -1,5 +1,17 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'),
-    url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff');
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TT-Lakes-Bold.woff2') format('woff2'),
+  url('../fonts/TT-Lakes-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TT-Lakes-Medium.woff2') format('woff2'),
+  url('../fonts/TT-Lakes-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TT-Lakes-Regular.woff2') format('woff2'),
+  url('../fonts/TT-Lakes-Regular.woff') format('woff');
 }
