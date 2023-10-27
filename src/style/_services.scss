@@ -33,9 +33,10 @@
 
 .tab__button {
   border-style: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'TT Lakes Medium', sans-serif;
   padding: 0.5rem;
+  color:$button-text-grey;
 }
 
 .tab__button:hover {
@@ -73,7 +74,7 @@
 /* MODIFIERS */
 
 .tab-content__text--font-size {
-  font-size: 16px;
+  font-size: 1.1rem;
 }
 
 .tab-content__text--bold {
