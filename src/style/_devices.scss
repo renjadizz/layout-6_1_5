@@ -15,6 +15,9 @@
   position: relative;
 }
 
+.devices__tab__button:hover {
+  filter: grayscale(100%);
+}
 .devices__grid__text {
   position: absolute;
   top: 12px;

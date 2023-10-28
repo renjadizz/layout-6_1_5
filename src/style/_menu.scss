@@ -16,6 +16,7 @@
   flex-direction: column;
   overflow: hidden;
   background-color: $button-background;
+  z-index: 10;
 }
 
 .menu__tab {
