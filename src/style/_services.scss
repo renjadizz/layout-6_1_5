@@ -77,7 +77,9 @@
 .tab-content__text--bold {
   font-weight: bold;
 }
-
+.tab-content__text--hide{
+  display: none;
+}
 
 @media (max-width: 1091px) {
   .tab-content__text {
