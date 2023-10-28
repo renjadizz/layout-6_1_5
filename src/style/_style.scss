@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: $main-background;
 }
+
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -12,8 +13,17 @@ body {
   padding-left: 320px;
   left: 0;
 }
-.main-content{
+
+.main-content {
   display: block;
+}
+
+.auto-fade-in {
+  opacity: 1;
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
 }
 
 @media (min-width: 768px) {
@@ -21,8 +31,9 @@ body {
     left: 320px;
   }
 }
+
 @media (max-width: 768px) {
-  .wrapper{
+  .wrapper {
     padding-left: 0;
   }
 }

@@ -14,9 +14,9 @@
 .tab {
   flex-shrink: 1;
   display: grid;
-  grid-template-columns: repeat(6, minmax(250px,1fr));
+  grid-template-columns: repeat(6, minmax(250px, 1fr));
   margin: 1rem 1rem 2rem 1rem;
-  overflow-x:auto;
+  overflow-x: auto;
 }
 
 .tab-content {
@@ -33,7 +33,7 @@
   font-size: 1.1rem;
   font-family: 'TT Lakes Medium', sans-serif;
   padding: 0.5rem;
-  color:$button-text-grey;
+  color: $button-text-grey;
 }
 
 .tab__button:hover {
@@ -77,9 +77,12 @@
 .tab-content__text--bold {
   font-weight: bold;
 }
-.tab-content__text--hide{
+
+.tab-content__text--hide {
   display: none;
+  opacity: 0;
 }
+
 
 @media (max-width: 1091px) {
   .tab-content__text {

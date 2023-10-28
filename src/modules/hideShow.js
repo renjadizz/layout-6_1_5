@@ -6,10 +6,15 @@ function hideShowText(text, icon, hidable) {
         text.textContent = "Скрыть";
         icon.src = icon_hide;
         hidable.style.cssText = "display: block";
+        setTimeout(function () {
+            hidable.classList.add("auto-fade-in");
+            hidable.style.opacity = "1";
+        }, 0);
     } else {
         text.textContent = "Читать далее";
         icon.src = icon_expand;
         hidable.style.cssText = "display: none";
+        hidable.classList.remove("auto-fade-in");
     }
 }
 
@@ -19,12 +24,17 @@ function hideShowContent(text, icon, hidable) {
         icon.src = icon_hide;
         hidable.forEach(function (elem) {
             elem.style.cssText = "display: flex";
+            setTimeout(function () {
+                elem.classList.add("auto-fade-in");
+                elem.style.opacity = "1";
+            }, 0);
         });
     } else {
         text.textContent = "Показать все";
         icon.src = icon_expand;
         hidable.forEach(function (elem) {
             elem.style.cssText = "display: none";
+            elem.classList.remove("auto-fade-in");
         });
     }
 }
