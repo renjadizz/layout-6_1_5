@@ -10,7 +10,19 @@ body {
   margin: 0 auto;
   position: relative;
   padding-left: 320px;
+  left: 0;
 }
 .main-content{
   display: block;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    left: 320px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper{
+    padding-left: 0;
+  }
 }

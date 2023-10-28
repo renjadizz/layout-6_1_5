@@ -4,8 +4,8 @@
 }
 
 .prices__table {
-  width: 95%;
-  margin: 2rem;
+  width: calc(100% - 40px);
+  margin: auto;
   border-collapse: collapse;
 }
 
@@ -58,7 +58,9 @@
     padding-left: 1rem;
   }
 }
+
 .prices__table__td__button:hover {
   filter: opacity(50%);
 }
+
 /* MODIFIERS */
