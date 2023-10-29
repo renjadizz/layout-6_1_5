@@ -79,13 +79,13 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .main-content__header--hidable{
     display: block;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header__icon-background--hide{
     display: none;
   }

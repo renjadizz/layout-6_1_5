@@ -7,7 +7,7 @@
 
 .menu {
   position: fixed;
-  height: 1024px;
+  height: 100%;
   width: 320px;
   //box-shadow: 2rem 0 3rem $main-background;
   margin-left: -320px;
@@ -96,7 +96,8 @@
   font-size: 1rem;
   font-family: "TT Lakes Medium";
 }
-.menu__footer__text--h1{
+
+.menu__footer__text--h1 {
   font-size: 1.5rem;
   font-family: "TT Lakes Bold";
 }

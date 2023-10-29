@@ -32,11 +32,14 @@ body {
   }
 }
 
+@media (min-width: 769px) {
+  .feedback__header--hidable {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .wrapper {
     padding-left: 0;
-  }
-  .menu {
-    height: auto;
   }
 }
