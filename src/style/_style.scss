@@ -6,16 +6,18 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
-  width: 100vw;
-  margin: 0 auto;
-  position: relative;
-  padding-left: 320px;
-  left: 0;
+  //height: 100vh;
+  //width: 100vw;
+  //margin: 0 auto;
+  //position: relative;
+  //padding-left: 320px;
+  //left: 0;
+
 }
 
 .main-content {
   display: block;
+  margin-left: 320px;
 }
 
 .auto-fade-in {
@@ -41,5 +43,8 @@ body {
 @media (max-width: 768px) {
   .wrapper {
     padding-left: 0;
+  }
+  .main-content {
+    margin-left: 0px;
   }
 }
