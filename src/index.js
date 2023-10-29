@@ -12,4 +12,7 @@ let feedbackShowButton = document.querySelector("#menu__feedback");
 feedbackShowButton.onclick = menu.feedbackShow;
 let feedbackCloseButton = document.querySelector("#btn-feedback-close");
 feedbackCloseButton.onclick = menu.feedbackClose;
-
+let callShowButton = document.querySelector("#menu__call");
+callShowButton.onclick = menu.feedbackShow;
+let callCloseButton = document.querySelector("#btn-call-close");
+callCloseButton.onclick = menu.feedbackClose;

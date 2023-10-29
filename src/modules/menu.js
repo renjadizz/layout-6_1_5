@@ -20,22 +20,36 @@ export function menuClose(event) {
 }
 
 let feedbackMenu = document.querySelector(".feedback");
+let callMenu = document.querySelector(".call");
 
-export function feedbackShow() {
-
-    feedbackMenu.style.cssText = "margin-right: 0";
+export function feedbackShow(event) {
+    let elemMenu;
+    if (event.currentTarget.id === "menu__feedback") {
+        elemMenu = feedbackMenu;
+    }
+    if (event.currentTarget.id === "menu__call") {
+        elemMenu = callMenu;
+    }
+    elemMenu.style.cssText = "margin-right: 0";
     mainContent.style.filter = "blur(1rem)";
     if (window.innerWidth < 440) {
-        feedbackMenu.style.width = `${window.innerWidth}px`;
+        elemMenu.style.width = `${window.innerWidth}px`;
     }
     mainContent.addEventListener("mousedown", feedbackClose);
 }
 
 export function feedbackClose(event) {
+    let elemMenu;
+    console.log(feedbackMenu.style.marginRight);
+    if (feedbackMenu.style.marginRight === "0px") {
+        elemMenu = feedbackMenu;
+    } else {
+        elemMenu = callMenu;
+    }
     event.stopPropagation();
-    let feedBackWidth = feedbackMenu.getBoundingClientRect().width;
-    feedbackMenu.style.marginRight = `-${feedBackWidth}px`;
-    feedbackMenu.style.width = `${feedBackWidth}px`;
+    let feedBackWidth = elemMenu.getBoundingClientRect().width;
+    elemMenu.style.marginRight = `-${feedBackWidth}px`;
+    elemMenu.style.width = `${feedBackWidth}px`;
     if (window.innerWidth > 768) {
         setTimeout(function () {
             mainContent.style.filter = "none";

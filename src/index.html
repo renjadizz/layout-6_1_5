@@ -53,7 +53,7 @@
                 <button id="menu__feedback" class="header__icon-background header__icon-background--bg-circle header__icon-background__button">
                     <img class="header__icon-background__icon" src="img/icon_phone.svg" alt="icon_phone">
                 </button>
-                <button class="header__icon-background header__icon-background--bg-circle header__icon-background__button">
+                <button id="menu__call" class="header__icon-background header__icon-background--bg-circle header__icon-background__button">
                     <img class="header__icon-background__icon" src="img/icon_chat.svg" alt="icon_chat">
                 </button>
                 <button class="header__icon-background header__icon-background--bg-circle header__icon-background__button">
@@ -82,6 +82,25 @@
             <input type="text" name="phone" placeholder="Телефон">
             <input type="text" name="email" placeholder="Электронная почта">
             <textarea placeholder="Сообщение"></textarea>
+            <div><p class="feedback_form__text">
+                Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой
+                конфиденциальности</span>
+            </p>
+                <button class="prices__table__td__button feedback_form__button--right"><p>ОТПРАВИТЬ</p><img src="img/icon_arrow.svg">
+                </button>
+            </div>
+        </div>
+    </article>
+    <article class="call">
+        <header class="header header--color feedback__header--hidable feedback__header--left_align">
+            <button id="btn-call-close"
+                    class="header__icon-background header__icon-background--bg-circle header__icon-background__button header__icon-background--hide header__items--margin">
+                <img class="header__icon-background__icon" src="img/icon_cross.svg" alt="icon_burger">
+            </button>
+        </header>
+        <h1 class="services__h1">Заказать звонок</h1>
+        <div class="feedback_form">
+            <input type="text" name="phone" placeholder="Телефон">
             <div><p class="feedback_form__text">
                 Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой
                 конфиденциальности</span>
