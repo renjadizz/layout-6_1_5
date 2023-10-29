@@ -12,6 +12,9 @@ export function menuClose(event) {
     event.stopPropagation();
     menuPanel.style.cssText = "margin-left: -320px";
     menuPanel.style.boxShadow = `none`;
-    mainContent.style.filter = "none";
+
+    setTimeout(function () {
+        mainContent.style.filter = "none";
+    }, 1000);
     mainContent.removeEventListener("mousedown", menuClose);
 }
