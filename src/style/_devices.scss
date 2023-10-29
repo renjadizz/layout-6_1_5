@@ -11,8 +11,18 @@
 /* ELEMENTS */
 
 .devices__tab__button {
+  min-width: 240px;
   min-height: 160px;
   position: relative;
+  margin: 1rem;
+  border-style: solid;
+  border-color: $button-border-grey;
+  background-color: $button-background;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .devices__tab__button:hover {

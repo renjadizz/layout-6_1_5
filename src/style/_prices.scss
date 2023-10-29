@@ -58,8 +58,36 @@
   filter: opacity(50%);
 }
 
+.prices__swiper__content {
+  width: 100%;
+  background-color: $button-background;
+  padding: 1rem;
+  height: 200px;
+}
+
+.prices__swiper__content__header {
+  color: $button-text-grey;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 0.1rem;
+}
+
+.prices__swiper__content__text {
+  font-size: 1rem;
+  padding: 0;
+  margin-top: 0.1rem;
+}
+
+.prices__swiper__content__grid {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* MODIFIERS */
 .prices__table__td--flex {
   display: flex;
   justify-content: center;
+}
+.prices__swiper__hidable {
+  display: none!important;
 }
