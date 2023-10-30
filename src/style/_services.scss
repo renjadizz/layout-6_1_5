@@ -68,6 +68,10 @@
   margin-right: 2rem;
 }
 
+.services__header__right-side {
+  display: none;
+}
+
 /* MODIFIERS */
 
 .tab-content__text--font-size {
@@ -87,5 +91,34 @@
 @media (max-width: 1091px) {
   .tab-content__text {
     width: 100%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .services {
+    padding-top: 1rem;
+  }
+
+  .services__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .services__header__right-side {
+    display: flex;
+  }
+
+  .services__header__right-side__text-button {
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  .services__header__right-side__text-button p {
+    white-space: nowrap;
+    padding-top: 1rem;
+  }
+
+  .services__header__icon-background--min-width {
+    min-width: 35px;
   }
 }

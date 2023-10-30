@@ -28,19 +28,19 @@ body {
   -o-transition: all 1s ease-out;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1060px) {
   .menu {
     left: 320px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1060px) {
   .feedback__header--hidable {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1060px) {
   .wrapper {
     padding-left: 0;
   }
